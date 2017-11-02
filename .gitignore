@@ -2,3 +2,6 @@
 *.pyc
 
 .idea
+saved_networks/bird-dqn-10000.data-00000-of-00001
+saved_networks/bird-dqn-10000.index
+saved_networks/bird-dqn-10000.meta

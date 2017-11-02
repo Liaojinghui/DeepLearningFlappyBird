@@ -12,10 +12,7 @@ from __future__ import print_function
 
 import sys
 
-import cv2
 import tensorflow as tf
-
-from game.wrapped_flappy_bird import SCREENWIDTH, SCREENHEIGHT
 
 sys.path.append('game/')
 import wrapped_flappy_bird as game
@@ -112,8 +109,7 @@ def trainNetwork(s, readout, h_fc1, sess):
     do_nothing = np.zeros(ACTIONS)
     do_nothing[0] = 1
     x_t, r_0, terminal = game_state.frame_step(do_nothing)
-    # x_t = cv2.cvtColor(cv2.resize(x_t, (80, 80)), cv2.COLOR_BGR2GRAY)
-    # ret, x_t = cv2.threshold(x_t, 1, 255, cv2.THRESH_BINARY)
+
     s_t = np.stack((x_t, x_t, x_t, x_t), axis=2)
 
     # saving and loading networks

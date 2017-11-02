@@ -1,7 +1,7 @@
 # Using Deep Q-Network to Learn How To Play Flappy Bird
 
 <img src="./images/flappy_bird_demp.gif" width="250">
-
+<img src="./images/flappy.png" width="250">
 7 mins version: [DQN for flappy bird](https://www.youtube.com/watch?v=THhUXIhjkCM)
 
 ## Overview
@@ -9,15 +9,16 @@ This project follows the description of the Deep Q Learning algorithm described 
 
 ## Installation Dependencies:
 * Python 2.7 or 3
-* TensorFlow 0.7
+* TensorFlow 1.3>
 * pygame
 * OpenCV-Python
+* Pillow
 
 ## How to Run?
 ```
-git clone https://github.com/yenchenlin1994/DeepLearningFlappyBird.git
+git clone https://github.com/Liaojinghui/DeepLearningFlappyBird.git
 cd DeepLearningFlappyBird
-python deep_q_network.py
+python App.py
 ```
 
 ## What is Deep Q-Network?
